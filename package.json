@@ -1,0 +1,73 @@
+{
+  "name": "@wbc-ui/mermaid",
+  "version": "3.0.0-rc.2",
+  "description": "Reactive Mermaid component for Vue 3 with remote sources, lifecycle events, and live WBC-rendered nodes",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": true,
+  "author": "Wissem Boughamoura",
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "pretest": "npm run build",
+    "check:dist": "node tools/check_dist_freshness.mjs",
+    "prepublishOnly": "npm test && npm run check:dist",
+    "test": "vitest run"
+  },
+  "main": "./dist/mermaid3.umd.cjs",
+  "module": "./dist/mermaid3.es.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/mermaid3.es.js",
+      "require": "./dist/mermaid3.umd.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "types/index.d.ts",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "COMPATIBILITY.md",
+    "MIGRATION.md"
+  ],
+  "dependencies": {
+    "mermaid": "^11.12.2"
+  },
+  "bundleDependencies": [
+    "mermaid"
+  ],
+  "peerDependencies": {
+    "@wbc-ui/core": "^3.0.0-rc.1",
+    "vue": "^3.5.0"
+  },
+  "peerDependenciesMeta": {
+    "@wbc-ui/core": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.0",
+    "@vue/test-utils": "^2.4.6",
+    "acorn": "^8.17.0",
+    "acorn-walk": "^8.3.5",
+    "cross-env": "^7.0.3",
+    "vite": "^6.0.0",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vitest": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbc-ui/mermaid.git"
+  },
+  "homepage": "https://mermaid.wbc-ui.com",
+  "bugs": {
+    "url": "https://github.com/wbc-ui/mermaid/issues"
+  },
+  "keywords": ["vue", "vue3", "mermaid", "diagram", "diagrams-as-code", "interactive-diagram", "dynamic-nodes", "wbc-ui"],
+  "engines": { "node": ">=18" }
+}
