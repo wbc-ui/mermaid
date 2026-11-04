@@ -165,11 +165,11 @@ Flowchart node IDs and sequence participant IDs are resolved automatically. Othe
 - Vue `^3.5.0`
 - Node.js `>=18` for development/builds
 - Bundled Mermaid `^11.12.2`
-- Optional `@wbc-ui/core ^3.0.0-rc.1`
+- Optional `@wbc-ui/core ^3.0.0-rc.3`
 - ESM and CommonJS `.cjs` entries
 - SSR produces a shell; SVG renders after client mount
 
-`3.0.0-rc.1` is a release candidate. Review `CHANGELOG.md`, `COMPATIBILITY.md`, and `MIGRATION.md` before adoption.
+`3.0.0-rc.3` is a release candidate. Review `CHANGELOG.md`, `COMPATIBILITY.md`, and `MIGRATION.md` before adoption.
 
 ## Validation
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.0.0-rc.3
+
+- Coordinated WBC v3 release-candidate alignment and refreshed public documentation.
+- Documented and demonstrated live `asWbc` node rendering.
+
 ## 3.0.0-rc.2
 
 - Version bump for coordinated WBC v3 release candidate (npm `next`).

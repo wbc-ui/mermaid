@@ -1,6 +1,6 @@
 {
   "name": "@wbc-ui/mermaid",
-  "version": "3.0.0-rc.2",
+  "version": "3.0.0-rc.3",
   "description": "Reactive Mermaid component for Vue 3 with remote sources, lifecycle events, and live WBC-rendered nodes",
   "license": "MIT",
   "publishConfig": {
@@ -42,7 +42,7 @@
     "mermaid"
   ],
   "peerDependencies": {
-    "@wbc-ui/core": "^3.0.0-rc.1",
+    "@wbc-ui/core": "^3.0.0-rc.3",
     "vue": "^3.5.0"
   },
   "peerDependenciesMeta": {
